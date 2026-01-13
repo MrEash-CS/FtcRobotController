@@ -28,7 +28,7 @@ public class TeleOpMain  extends OpMode {
     private CRServo right_Feeder = null;
 
     ElapsedTime feederTimer = new ElapsedTime();
-    
+
     /* This enum declares the different states the robot
      can be in during the launching function */
     private enum LaunchState {
