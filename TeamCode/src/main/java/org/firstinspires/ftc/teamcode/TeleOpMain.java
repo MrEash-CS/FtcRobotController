@@ -17,8 +17,8 @@ public class TeleOpMain  extends OpMode {
     final double STOP_SPEED = 0.0; //We send this power to the servos when we want them to stop.
     final double FULL_SPEED = 1.0;
 
-    final double LAUNCHER_TARGET_VELOCITY = 1125;
-    final double LAUNCHER_MIN_VELOCITY = 1075;
+    final double LAUNCHER_TARGET_VELOCITY = 600;
+    final double LAUNCHER_MIN_VELOCITY = 400;
 
     // Declare OpMode members.
     private DcMotor leftDrive = null;
@@ -128,7 +128,7 @@ public class TeleOpMain  extends OpMode {
          */
         telemetry.addData("State", launchState);
         telemetry.addData("Motors", "left (%.2f), right (%.2f)", leftPower, rightPower);
-        telemetry.addData("targetSpeed", 1125.0);
+        telemetry.addData("targetSpeed", LAUNCHER_TARGET_VELOCITY);
         telemetry.addData("motorSpeed", launcher.getVelocity());
 
     }
