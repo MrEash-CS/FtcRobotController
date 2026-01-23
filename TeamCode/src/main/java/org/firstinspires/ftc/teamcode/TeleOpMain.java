@@ -17,8 +17,8 @@ public class TeleOpMain  extends OpMode {
     final double STOP_SPEED = 0.0; //We send this power to the servos when we want them to stop.
     final double FULL_SPEED = 1.0;
 
-    final double LAUNCHER_TARGET_VELOCITY = 600;
-    final double LAUNCHER_MIN_VELOCITY = 400;
+    final double LAUNCHER_TARGET_VELOCITY = 1900;
+    final double LAUNCHER_MIN_VELOCITY = 1870;
 
     // Declare OpMode members.
     private DcMotor leftDrive = null;
